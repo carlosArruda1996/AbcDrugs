@@ -10,6 +10,8 @@ module com.abcdrugs.abcdrugs {
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
+    requires java.net.http;
+    requires com.fasterxml.jackson.databind;
 
     exports com.abcdrugs.abcdrugs;
     opens com.abcdrugs.abcdrugs to javafx.fxml;
