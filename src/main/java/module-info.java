@@ -11,6 +11,8 @@ module com.abcdrugs.abcdrugs {
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
 
-    opens com.abcdrugs.abcdrugs to javafx.fxml;
     exports com.abcdrugs.abcdrugs;
+    opens com.abcdrugs.abcdrugs to javafx.fxml;
+    exports com.abcdrugs.abcdrugs.controller;
+    opens com.abcdrugs.abcdrugs.controller to javafx.fxml;
 }
